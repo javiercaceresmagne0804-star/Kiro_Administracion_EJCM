@@ -1,0 +1,11 @@
+{
+  "feature": "estudiantes-materias",
+  "description": "Gestión de estudiantes y materias asignadas con persistencia en PostgreSQL",
+  "status": "approved",
+  "created": "2026-08-10",
+  "phases": {
+    "requirements": "approved",
+    "design": "approved",
+    "tasks": "in-progress"
+  }
+}
