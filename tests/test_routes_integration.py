@@ -1,5 +1,3 @@
-"""Pruebas de integración: ejercitan la API completa vía el test_client de Flask."""
-
 import json
 
 

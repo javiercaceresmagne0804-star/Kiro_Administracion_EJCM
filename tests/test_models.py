@@ -1,5 +1,3 @@
-"""Pruebas unitarias de los modelos SQLAlchemy."""
-
 from academic.models import Student, Subject
 
 

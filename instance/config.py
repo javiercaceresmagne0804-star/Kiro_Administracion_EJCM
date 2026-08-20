@@ -1,7 +1,5 @@
 """Configuración de la aplicación.
 
-Las credenciales de PostgreSQL nunca se hardcodean: siempre se leen de
-variables de entorno (ver .env.example en la raíz del proyecto).
 """
 
 import os

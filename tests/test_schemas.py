@@ -1,5 +1,3 @@
-"""Pruebas unitarias de validación/serialización con Marshmallow."""
-
 import pytest
 from marshmallow import ValidationError
 

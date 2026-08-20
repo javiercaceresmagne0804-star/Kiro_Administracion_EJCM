@@ -1,12 +1,8 @@
-"""Modelos SQLAlchemy para estudiantes, materias y su asignación."""
-
 from datetime import datetime
 
 from db import db
 
-# Tabla intermedia (muchos a muchos) con clave primaria compuesta.
-# ON DELETE CASCADE garantiza que al borrar un estudiante o una materia,
-# sus asignaciones se eliminan automáticamente a nivel de base de datos.
+
 student_subjects = db.Table(
     "student_subjects",
     db.Column(

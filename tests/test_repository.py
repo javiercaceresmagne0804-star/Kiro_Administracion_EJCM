@@ -1,5 +1,3 @@
-"""Pruebas unitarias de la capa repository (sin pasar por HTTP)."""
-
 import pytest
 
 from academic import repository as repo

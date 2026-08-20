@@ -1,11 +1,3 @@
-"""Fixtures compartidas por toda la suite de pruebas.
-
-Las pruebas usan SQLite en memoria (no requieren un PostgreSQL real
-corriendo) porque el modelo de datos no usa tipos específicos de
-Postgres. Así la suite es rápida y se puede correr en cualquier
-entorno, incluido CI.
-"""
-
 import pytest
 
 from app import create_app

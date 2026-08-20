@@ -1,10 +1,3 @@
-"""Lógica de negocio para estudiantes.
-
-Actúa como intermediario entre las rutas (HTTP) y el repository (datos).
-Aquí viven las reglas que no son puramente de acceso a datos ni de
-transporte HTTP: normalización de campos, validaciones cruzadas, etc.
-"""
-
 from academic import repository as repo
 from academic.models import Student
 

@@ -1,9 +1,3 @@
-"""Capa de acceso a datos.
-
-Contiene únicamente operaciones contra la base de datos (SQLAlchemy),
-sin conocer nada de HTTP/Flask. Esto permite probarla de forma aislada
-y reutilizarla desde otros contextos (CLI, tareas en background, etc).
-"""
 
 from typing import Optional
 
@@ -14,17 +8,11 @@ from academic.models import Student, Subject
 
 
 class DuplicateCodeError(Exception):
-    """Se lanza cuando ya existe un estudiante/materia con ese código."""
+  
 
 
 class NotFoundError(Exception):
-    """Se lanza cuando no se encuentra el recurso solicitado."""
-
-
-# --------------------------------------------------------------------------
-# Estudiantes
-# --------------------------------------------------------------------------
-
+   
 def list_students(search: Optional[str] = None) -> list[Student]:
     query = Student.query
     if search:

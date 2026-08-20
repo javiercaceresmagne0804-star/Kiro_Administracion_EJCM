@@ -1,5 +1,3 @@
-"""Pruebas de la capa de negocio assignment_service."""
-
 from academic import assignment_service
 
 

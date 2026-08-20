@@ -1,5 +1,3 @@
-"""Pruebas de la capa de negocio subject_service."""
-
 import pytest
 
 from academic import subject_service

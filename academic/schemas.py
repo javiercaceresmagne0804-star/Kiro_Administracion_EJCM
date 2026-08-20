@@ -1,5 +1,3 @@
-"""Schemas de validación (entrada) y serialización (salida) con Marshmallow."""
-
 from marshmallow import Schema, fields, validate
 
 

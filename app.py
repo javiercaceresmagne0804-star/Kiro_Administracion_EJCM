@@ -1,10 +1,3 @@
-"""Punto de entrada de la aplicación.
-
-Uso:
-    export DATABASE_URL=postgresql://usuario:password@localhost:5432/estudiantes_materias_db
-    flask --app app run --debug
-"""
-
 from flask import Flask, jsonify
 
 from db import db

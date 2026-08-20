@@ -1,12 +1,3 @@
-"""API REST: estudiantes, materias y asignaciones.
-
-Las rutas validan la entrada con los schemas de Marshmallow, delegan la
-lógica de negocio a la capa de servicios (student_service, subject_service,
-assignment_service), y traducen las excepciones del dominio a respuestas
-HTTP con el código adecuado. El repository no se llama directamente desde
-aquí, igual que en el módulo auth de referencia.
-"""
-
 from flask import Blueprint, jsonify, request
 from marshmallow import ValidationError
 
@@ -90,10 +81,6 @@ def delete_student(student_id: int):
     return "", 204
 
 
-# --------------------------------------------------------------------------
-# Materias
-# --------------------------------------------------------------------------
-
 @academic_bp.get("/materias")
 def get_subjects():
     subjects = subject_service.list_subjects()
@@ -145,9 +132,6 @@ def delete_subject(subject_id: int):
     return "", 204
 
 
-# --------------------------------------------------------------------------
-# Asignaciones
-# --------------------------------------------------------------------------
 
 @academic_bp.get("/estudiantes/<int:student_id>/materias")
 def get_student_subjects(student_id: int):

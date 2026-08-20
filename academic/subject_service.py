@@ -1,5 +1,3 @@
-"""Lógica de negocio para materias (subjects)."""
-
 from academic import repository as repo
 from academic.models import Subject
 
